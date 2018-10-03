@@ -1,0 +1,47 @@
+/** 
+    CSS Stylesheet for Assignment 01 
+**/
+
+body { 
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-left: 50px;
+    width: 960px;
+
+}
+
+.row {
+    display: flex;
+}
+
+h1 {
+    background: #4aaaa5;
+    color: #eee;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding: 20px 20px;
+    margin: 0;
+    float: left;
+}
+
+ul {
+    list-style: none;
+    }
+
+li {
+    margin: 0 5px;
+}    
+
+#links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bio {
+    padding: 0 5px;
+    line-height: 2;
+}
+
+img {
+    float: left;
+    margin-right: 1em
+}
