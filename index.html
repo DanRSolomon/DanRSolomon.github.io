@@ -23,6 +23,13 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
 
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_SsuEOzlD0Cs7yBH8E9Bvh");
+    })();
+  </script>
 </head>
 
 <body id="page-top">
@@ -95,6 +102,38 @@
             <p class="text-black-50 mb-0">Below are a few of my web developer projects. Please visit my
               <a href="https://github.com/DanRSolomon" target="_blank">GitHub</a> page to see more.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <a href="https://powerful-journey-65247.herokuapp.com/" target="_blank">
+            <img class="img-fluid" src="img/ordermethisFront_bw.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <a href="https://powerful-journey-65247.herokuapp.com/" target="_blank">
+                  <h4 class="text-white">Order Me This</h4>
+                </a>
+                <p class="mb-0 text-white-50">
+                  Full stack web application to help organize group orders for events
+                  such as lunch runs in the workplace.
+                </p>
+                <p class="mb-0 text-white-50">
+                  - A group project.
+                  <a href="https://github.com/DanRSolomon/Project-3--Order-Me-This-App" target="_blank">GitHub link</a>
+                </p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+                <p class="mb-0 text-white-50" id="tech-text">
+                  Technologies: React, React-router-dom, MongoDB, Mongoose, Express.js, Axios, Bootstrap, CSS
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -216,32 +255,36 @@
   </section>
 
   <!-- Email Me Section -->
-  <!-- <section id="signup" class="signup-section">
+  <section id="signup" class="signup-section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center"> -->
 
-          <!-- <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> -->
-          <!-- <h2 id="emailMe" class="far fa-paper-plane text-white mb-5"> Email Me!</h2>
 
-          <form action="mailto:someone@somewhere.com" target="_top" class="fa-2x mb-2 text-white mr-0 mr-sm-2 mb-3 mb-sm-0" method="post" enctype="text/plain">
-            Name:<br>
-            <input type="text" name="name"><br>
-            E-mail:<br>
-            <input type="text" name="mail"><br>
-            Comment:<br>
-            <input type="text" name="comment" ><br><br>
-            <input class="btn btn-primary" type="submit" value="Send">
-            <input class="btn btn-primary" type="reset" value="Reset">
-          </form>
- -->
-          <!-- <form class="form-inline d-flex">
+      <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+      <h2 id="emailMe" class="far text-white mb-5"> Email Me!</h2>
+
+      <!-- <form class="form-inline d-flex">
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
           </form> -->
 
+      <form class="form-grid" id="myform">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" name="from_name" placeholder="Your Name">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" name="from_email" placeholder="Your Email">
+          </div>
         </div>
-      </div>
+        <div class="form-group">
+          <textarea type="text" class="form-control" name="message_html" placeholder="Your Message"></textarea>
+        </div>
+        <button class="btn btn-primary" id="send-email">
+          Send
+        </button>
+      </form>
+
+
     </div>
   </section>
 
@@ -273,9 +316,9 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <!-- <a href="#" class="js-scroll-trigger"> -->
-                  dan@danrsolomon.com
-                <!-- </a> -->
+                <a href="#signup" class="js-scroll-trigger">
+                dan@danrsolomon.com
+                </a>
               </div>
             </div>
           </div>
@@ -324,6 +367,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+
+  <script type="text/javascript" src="js/email.js"></script>
+
 
 </body>
 
